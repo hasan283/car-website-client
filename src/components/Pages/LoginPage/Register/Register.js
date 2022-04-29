@@ -1,10 +1,15 @@
-import { Button } from 'bootstrap';
 import React from 'react';
-import { Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../../firebase.init';
 const Register = () => {
-
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
     const navigate = useNavigate();
 
     // Handle Register 
@@ -13,6 +18,8 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
+
+        createUserWithEmailAndPassword(email, password);
     }
 
     // Navigate Login page 
@@ -43,7 +50,9 @@ const Register = () => {
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Control type="password" name="password" placeholder="Password" required />
                             </Form.Group>
-                            <button style={{ border: 'none' }} className='d-block mx-auto bg-info text-white rounded px-5 py-2'>Register</button>
+                            <Button variant="primary" type="submit">
+                                Submit
+                            </Button>
                         </Form>
                         <p className='mt-5'>Already Have an Account? <span className='text-danger' style={{ cursor: 'pointer' }} onClick={navigateLogin}>Please Login</span></p>
                     </div>
