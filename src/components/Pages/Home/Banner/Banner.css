@@ -1,0 +1,40 @@
+ .banner-image img{
+    max-width: 100%;
+}
+.banner-image {
+    position: relative;
+}
+.banner-info{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner-image .banner-content{
+    text-align: center;
+    color: #ffca28;
+}
+.banner-image .banner-content h1{
+    font-size: 50px;
+}
+.banner-image .banner-content p{
+    color: #fff;
+    font-size: 18px;
+}
+@media screen and (max-width: 468px) {
+    .banner-image .banner-content h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .banner-info{
+        top: 25%;
+    }
+    .banner-image .banner-content h1{
+        font-size: 25px;
+    }
+    .banner-image .banner-content p{
+        font-size: 15px;
+    }
+}

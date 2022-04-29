@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='header'>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <>
+            <Navbar collapseOnSelect sticky='top' expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <div className="logo"><h4 style={{ color: '#ffca28' }}><b>INVENTORY CAR</b></h4></div>
@@ -26,7 +26,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 
