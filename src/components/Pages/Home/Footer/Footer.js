@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
+        <div className='text-center'>
             <p>&copy; Car managing System -2022</p>
         </div>
     );

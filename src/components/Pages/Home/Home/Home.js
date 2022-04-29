@@ -1,16 +1,16 @@
 import React from 'react';
+import AboutUs from '../AboutUs/AboutUs';
 import Banner from '../Banner/Banner';
 import Inventories from '../Inventories/Inventories';
-import Services from '../Services/Services';
-import Users from '../Users/Users';
+import Teams from '../Teams/Teams';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <AboutUs></AboutUs>
             <Inventories></Inventories>
-            <Services></Services>
-            <Users></Users>
+            <Teams></Teams>
         </div>
     );
 };

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.about{
+    background: #fff7f5;
+    padding-bottom: 5rem;
+}
+.about .title{
+    color: #4f2822;
+    font-weight: bold;
+}
+.about .title span{
+    color: #ff3ec2;
+    border-bottom: 3px solid #ff3ec2;
+}
+.about .about-container h2{
+    color: #ff5929;
+}
+.about .about-container .icon{
+    color: #e54416;
+    font-size: 20px;
+}

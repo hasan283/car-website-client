@@ -14,9 +14,9 @@
 .inventory-container .inventory-info {
     padding: 0 10px;
 }
-/* .inventory-container h5{
-    color: ;
-} */
+.inventory-container h5{
+    color: #d00000;
+}
 .inventory-container .inventory-info p{
     line-height: 15px;
 }
