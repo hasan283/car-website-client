@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "name": "MAZDA CX-5 SX, V6, ABS, SUNROOF",
+        "sellerName": "Alex Johan",
+        "price": 42000,
+        "description": "It is very good and amazing car. Our service is very good and our managing system is lucy one. Don't waste your time sell our car and sell aur service",
+        "img": "https://i.ibb.co/j5nf8ZN/pexels-mike-136872.jpg",
+        "quantity": 3
+      },
+    {
+        "id": "2",
+        "name": "MAZDA CX-8 SX, V5, ABS, SUNROOF",
+        "sellerName": "Alina Sumita",
+        "price": 30000,
+        "description": "It is very good and amazing car. Our service is very good and our managing system is lucy one. Don't waste your time sell our car and sell aur service",
+        "img": "https://i.ibb.co/9N0Dp5g/pexels-mike-1007410.jpg",
+        "quantity": 4
+      },
+    {
+        "id": "3",
+        "name": "MAZDA CX-4 SUNROOF",
+        "sellerName": "Sumit Mondole",
+        "price": 25000,
+        "description": "It is very good and amazing car. Our service is very good and our managing system is lucy one. Don't waste your time sell our car and sell aur service",
+        "img": "https://i.ibb.co/MVkvmbk/pexels-pixabay-358070-1.jpg",
+        "quantity": 9
+      },
+    {
+        "id": "4",
+        "name": "MAZDA CX-5 SXF",
+        "sellerName": "Wonder Alex",
+        "price": 12000,
+        "description": "It is very good and amazing car. Our service is very good and our managing system is lucy one. Don't waste your time sell our car and sell aur service",
+        "img": " https://i.ibb.co/DGhjstb/pexels-mike-100656.jpg",
+        "quantity": 10
+      },
+    {
+        "id": "5",
+        "name": "MAZDA cz1 SUNROOF",
+        "sellerName": "Alex Johan",
+        "price": 52000,
+        "description": "It is very good and amazing car. Our service is very good and our managing system is lucy one. Don't waste your time sell our car and sell aur service",
+        "img": " https://i.ibb.co/KGbLnbM/pexels-mike-116675.jpg",
+        "quantity": 7
+      },
+    {
+        "id": "6",
+        "name": "MAZDA V6, ABS, SUNROOF",
+        "sellerName": "Milian Mahabub",
+        "price": 68000,
+        "description": "It is very good and amazing car. Our service is very good and our managing system is lucy one. Don't waste your time sell our car and sell aur service",
+        "img": "https://i.ibb.co/9GZ5fPb/pexels-mike-244206.jpg",
+        "quantity": 5
+      }
+    ]
+

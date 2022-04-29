@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.inventory-container img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.inventory-container .inventory{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.inventory-container .inventory-info {
+    padding: 0 10px;
+}
+/* .inventory-container h5{
+    color: ;
+} */
+.inventory-container .inventory-info p{
+    line-height: 15px;
+}
+.inventory-container .inventory-info .description{
+    line-height: 20px;
+}
+.inventory-container .inventory-btn button{
+    background: #d00000;
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+}
