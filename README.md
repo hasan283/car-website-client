@@ -1,6 +1,7 @@
 # Getting Started with Create Inventory-Car-management Website.
 
-INVENTORY-CAR-MANAGEMENT [Client Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdhasan-999).
+INVENTORY-CAR-MANAGEMENT :--- [Client Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdhasan-999).
+INVENTORY-CAR-MANAGEMENT :--- [Server Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdhasan-999).
 
 * রিয়াাক্ট এপ ইনিস্টল করেছি।
 * ফায়ারবেস ইনিস্টল করেছি। 
@@ -11,5 +12,5 @@ INVENTORY-CAR-MANAGEMENT [Client Side Link](https://github.com/ProgrammingHeroWC
 * হেডার বানিয়েছি।
 * ব্যানার বানিয়েছি।
 * ৬টি ইনভেন্টরি যোগ করেছি।
-* আলাদা দুনি সেংশন যোগ করেছি।
+* আলাদা দুটি সেংশন যোগ করেছি।
 
