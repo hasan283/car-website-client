@@ -6,9 +6,9 @@ import './Inventories.css'
 const Inventorys = () => {
     const [inventories] = useInventory();
     return (
-        <div className='container'>
+        <div id='inventory' className='container'>
             <div className="text-center py-5">
-                <h1>Amazing Car Inventory</h1>
+                <h1 className='pt-3'>Amazing Car Inventory</h1>
                 <p>IT WILL HELP US FIND THE TOYOTA YOU'RE LOOKING FOR IN YOUR AREA.</p>
             </div>
             <div className='inventory-item'>

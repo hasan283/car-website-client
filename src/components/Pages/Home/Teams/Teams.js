@@ -10,7 +10,7 @@ import userFive from '../../../Image/users/user-5.jpg';
 import userSix from '../../../Image/users/user-6.jpg';
 const Teams = () => {
     return (
-        <div className='user-container py-5'>
+        <div id='teams' className='user-container py-5'>
             <h1 className='text-center title py-5'>Our <span>Services</span> Teams</h1>
 
             <div className="container">

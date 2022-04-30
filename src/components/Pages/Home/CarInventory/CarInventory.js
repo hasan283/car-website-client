@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './CarInventory.css'
 
 const CarInventory = props => {
-    const { img, name, sellerName, price, description, quantity } = props.inventory;
+    const { id, img, name, sellerName, price, description, quantity } = props.inventory;
+    const navigate = useNavigate();
+    const handleStockUpdate = id => {
+        navigate(`/stockUpdate/${id}`)
+    }
     return (
         <div className='inventory-container'>
             <div className="inventory">
@@ -15,7 +20,7 @@ const CarInventory = props => {
                     <p><b>Quantity: </b>{quantity}</p>
                 </div>
                 <div className="inventory-btn">
-                    <button>Stock Update</button>
+                    <button onClick={() => handleStockUpdate(id)}>Stock Update</button>
                 </div>
             </div>
 

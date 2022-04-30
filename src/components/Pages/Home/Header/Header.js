@@ -1,8 +1,19 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../../../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth)
+
+    // Handle Sign Out 
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
+
     return (
         <>
             <Navbar collapseOnSelect sticky='top' expand="lg" bg="dark" variant="dark">
@@ -13,15 +24,21 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
-                            <Nav.Link href="#inventory">Inventory</Nav.Link>
-                            <Nav.Link href="#user">User</Nav.Link>
-                            <Nav.Link href="#services">About us</Nav.Link>
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link href="home#about">About us</Nav.Link>
+                            <Nav.Link href="home#inventory">Inventory</Nav.Link>
+                            <Nav.Link href="home#teams">Teams</Nav.Link>
+
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            {
+                                user ?
+                                    <Link to='/login'>
+                                        <button className='text-white' style={{ border: 'none', background: 'none' }} onClick={handleSignOut}>Sing Out</button></Link>
+
+                                    :
+                                    <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
