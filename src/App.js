@@ -9,7 +9,6 @@ import StockUpdate from './components/Pages/StockUpdate/StockUpdate';
 import RequireAuth from './components/Pages/LoginPage/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';
 import AllInventory from './components/Pages/AllInventory/AllInventory';
-import Loading from './components/Pages/LoginPage/Loading/Loading';
 import AddInventory from './components/Pages/AddInventory/AddInventory';
 
 function App() {
