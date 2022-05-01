@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import AllInventory from './components/Pages/AllInventory/AllInventory';
 import AddInventory from './components/Pages/AddInventory/AddInventory';
 import ManageInventory from './components/Pages/ManageInventory/ManageInventory';
+import Delivery from './components/Pages/Delivery/Delivery';
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
         <Route path='/stockUpdate/:stockUpdateId' element={
           <RequireAuth>
             <StockUpdate></StockUpdate>
+          </RequireAuth>
+        }></Route>
+        <Route path='/delivery/:stockUpdateId' element={
+          <RequireAuth>
+            <Delivery></Delivery>
           </RequireAuth>
         }></Route>
         <Route path='/allInventory' element={

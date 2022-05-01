@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 
@@ -23,6 +24,9 @@ const AddInventory = () => {
     };
     return (
         <div>
+            <Helmet>
+                <title>Add Inventory-Car Management</title>
+            </Helmet>
             <h1 className='text-center my-5'>Add Your Inventory!</h1>
             <div className='container my-5'>
                 <div className="row">

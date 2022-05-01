@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './StockUpdate.css'
+import useStock from '../../../hook/useStock';
 
 const StockUpdate = () => {
     const { stockUpdateId } = useParams();
-    const [stock, setStock] = useState({});
-
-    useEffect(() => {
-        const url = `http://localhost:5000/stock/${stockUpdateId}`;
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setStock(data))
-    }, [])
+    const [stock] = useStock(stockUpdateId);
     return (
         <div className='stock-container'>
             <Helmet>
@@ -26,6 +20,9 @@ const StockUpdate = () => {
                         <h3>Price: ${stock.price}</h3>
                         <h5>Quantity: {stock.quantity}</h5>
                         <p><b><u>Description: </u></b>{stock.description}</p>
+                        <Link to={`/delivery/${stockUpdateId}`}>
+                            <button>Buy Now</button>
+                        </Link>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 my-5">
                         <img src={stock.img} alt="" />

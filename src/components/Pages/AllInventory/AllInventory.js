@@ -1,9 +1,30 @@
-import React from 'react';
-import useInventory from '../../../hook/useInventory';
+import React, { useEffect, useState } from 'react';
 import AllInventoryDetail from '../AllInventoryDetail/AllInventoryDetail';
+import './AllInventory.css';
 
 const AllInventory = () => {
-    const [inventories] = useInventory();
+    const [pageCount, SetPageCount] = useState(0);
+    const [page, setPage] = useState(0)
+    const [size] = useState(6)
+
+
+    const [inventories, setInventories] = useState([]);
+    useEffect(() => {
+        fetch(`http://localhost:5000/stock?page=${page}&size=${size}`)
+            .then(res => res.json())
+            .then(data => setInventories(data))
+    }, [page, size])
+
+
+    useEffect(() => {
+        fetch('http://localhost:5000/stockCount')
+            .then(res => res.json())
+            .then(data => {
+                const count = data.count;
+                const pages = Math.ceil(count / 6);
+                SetPageCount(pages);
+            })
+    }, []);
     return (
         <div id='inventory' className='container'>
             <div className="text-center py-5">
@@ -16,6 +37,18 @@ const AllInventory = () => {
                         key={inventory._id}
                         inventory={inventory}></AllInventoryDetail>)
                 }
+            </div>
+            <div className="my-5 pagination">
+                {
+                    [...Array(pageCount).keys()].map(number => <button
+                        onClick={() => setPage(number)} className={page === number ? 'selected' : ''}>{number}</button>)
+                }
+                {/* <select onChange={e => setSize(e.target.value)}>
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select> */}
             </div>
         </div>
     );

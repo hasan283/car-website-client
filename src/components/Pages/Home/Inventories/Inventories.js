@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useInventory from '../../../../hook/useInventory';
 import CarInventory from '../CarInventory/CarInventory';
 import './Inventories.css'
 
 const Inventorys = () => {
-    const [inventories] = useInventory();
+    const [SetPageCount] = useState(0);
+    const [page] = useState(0)
+    const [size] = useState(6)
+
+
+    const [inventories, setInventories] = useState([]);
+    useEffect(() => {
+        fetch(`http://localhost:5000/stock?page=${page}&size=${size}`)
+            .then(res => res.json())
+            .then(data => setInventories(data))
+    }, [page, size])
+
+
+
+    useEffect(() => {
+        fetch('http://localhost:5000/stockCount')
+            .then(res => res.json())
+            .then(data => {
+                const count = data.count;
+                const pages = Math.ceil(count / 6);
+                SetPageCount(pages);
+            })
+    }, [])
     return (
         <div id='inventory' className='container'>
             <div className="text-center py-5">

@@ -17,3 +17,15 @@
     border: none;
     border-radius: 5px;
 }
+.manage-inventory  a{
+    text-decoration: none;
+}
+.manage-inventory .addBtn{
+    background: red;
+    border: none;
+    margin-top: 5rem;
+    color: #fff;
+    padding: 3rem 0;
+    font-size: 25px;
+    border-radius: 10px;
+}

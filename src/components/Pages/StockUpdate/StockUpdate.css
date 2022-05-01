@@ -16,3 +16,10 @@
     max-width: 100%;
     border-radius: 10px;
 }
+.stock-container  button{
+    background: #fd9720;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
