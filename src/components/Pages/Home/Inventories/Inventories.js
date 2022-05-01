@@ -4,7 +4,7 @@ import CarInventory from '../CarInventory/CarInventory';
 import './Inventories.css'
 
 const Inventorys = () => {
-    const [SetPageCount] = useState(0);
+    const [pageCount, SetPageCount] = useState(0);
     const [page] = useState(0)
     const [size] = useState(6)
 

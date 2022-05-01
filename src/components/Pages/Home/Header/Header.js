@@ -28,15 +28,22 @@ const Header = () => {
                             <Nav.Link href="home#about">About us</Nav.Link>
                             <Nav.Link href="home#inventory">Inventory</Nav.Link>
                             <Nav.Link href="home#teams">Teams</Nav.Link>
-                            <Nav.Link as={Link} to="/addInventory">Add Item</Nav.Link>
-                            <Nav.Link as={Link} to="/manageInventory">Manage-Inventory</Nav.Link>
+                            {
+                                user && <>
+                                    <Nav.Link as={Link} to="/addInventory">Add Item</Nav.Link>
+                                    <Nav.Link as={Link} to="/manageInventory">Manage-Inventory</Nav.Link>
+                                    <Nav.Link as={Link} to="/order">Order</Nav.Link>
+                                </>
+                            }
 
                         </Nav>
                         <Nav>
 
                             {
                                 user ?
-                                    <button className='text-white' style={{ border: 'none', background: 'none' }} onClick={handleSignOut}>Sing Out</button>
+                                    <Link to='/login'>
+                                        <button className='text-white' style={{ border: 'none', background: 'none' }} onClick={handleSignOut}>Sing Out</button>
+                                    </Link>
                                     :
                                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
                             }

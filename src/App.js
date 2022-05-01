@@ -12,6 +12,8 @@ import AllInventory from './components/Pages/AllInventory/AllInventory';
 import AddInventory from './components/Pages/AddInventory/AddInventory';
 import ManageInventory from './components/Pages/ManageInventory/ManageInventory';
 import Delivery from './components/Pages/Delivery/Delivery';
+import Order from './components/Pages/Order/Order';
+import NotFound from './components/Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -45,8 +47,10 @@ function App() {
             <ManageInventory></ManageInventory>
           </RequireAuth>
         }></Route>
+        <Route path='/order' element={<Order></Order>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
       <ToastContainer></ToastContainer>
