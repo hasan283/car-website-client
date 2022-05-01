@@ -2,7 +2,8 @@
 
 * INVENTORY-CAR-MANAGEMENT :--- [Client Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdhasan-999).
 * INVENTORY-CAR-MANAGEMENT :--- [Server Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdhasan-999).
-* INVENTORY-CAR-MANAGEMENT :--- [Live Website Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdhasan-999).
+* INVENTORY-CAR-MANAGEMENT :--- [Live Website Link](https://inventory-car-management.web.app/).
+* StockOverflow :--- [StockOverflow Link](https://amazing-syrniki-a4c3b4.netlify.app/).
 
 * রিয়াাক্ট এপ ইনিস্টল করেছি।
 * ফায়ারবেস ইনিস্টল করেছি। 
