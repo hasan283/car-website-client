@@ -8,6 +8,9 @@ import Register from './components/Pages/LoginPage/Register/Register';
 import StockUpdate from './components/Pages/StockUpdate/StockUpdate';
 import RequireAuth from './components/Pages/LoginPage/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';
+import AllInventory from './components/Pages/AllInventory/AllInventory';
+import Loading from './components/Pages/LoginPage/Loading/Loading';
+import AddInventory from './components/Pages/AddInventory/AddInventory';
 
 function App() {
   return (
@@ -21,9 +24,20 @@ function App() {
             <StockUpdate></StockUpdate>
           </RequireAuth>
         }></Route>
+        <Route path='/manageInventory' element={
+          <RequireAuth>
+            <AllInventory></AllInventory>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addInventory' element={
+          <RequireAuth>
+            <AddInventory></AddInventory>
+          </RequireAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
+
       <ToastContainer></ToastContainer>
       <Footer></Footer>
     </div>

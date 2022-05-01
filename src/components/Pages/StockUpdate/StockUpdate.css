@@ -1,0 +1,18 @@
+.stock-container{
+    background-color: #fff7f5;
+    padding: 3rem 0;
+    margin-bottom: 1rem;
+}
+.stock-container .title{
+    color: #fd9720;
+}
+.stock-container .name{
+    color: red;
+}
+.stock-container p{
+    font-size: 20px;
+}
+.stock-container img{
+    max-width: 100%;
+    border-radius: 10px;
+}

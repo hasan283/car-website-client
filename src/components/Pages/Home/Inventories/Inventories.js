@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useInventory from '../../../../hook/useInventory';
 import CarInventory from '../CarInventory/CarInventory';
 import './Inventories.css'
@@ -13,10 +14,16 @@ const Inventorys = () => {
             </div>
             <div className='inventory-item'>
                 {
-                    inventories.map(inventory => <CarInventory key={inventory.id}
+                    inventories.map(inventory => <CarInventory key={inventory._id}
                         inventory={inventory}></CarInventory>)
                 }
             </div>
+
+            <Link to='/manageInventory'>
+                <center>
+                    <button style={{ border: 'none', fontSize: '18px' }} className='bg-dark px-5 text-white py-3 my-5 rounded'>All Inventories</button>
+                </center>
+            </Link>
         </div>
     );
 };

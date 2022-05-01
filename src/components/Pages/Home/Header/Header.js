@@ -28,9 +28,11 @@ const Header = () => {
                             <Nav.Link href="home#about">About us</Nav.Link>
                             <Nav.Link href="home#inventory">Inventory</Nav.Link>
                             <Nav.Link href="home#teams">Teams</Nav.Link>
+                            <Nav.Link as={Link} to="/addInventory">Add Item</Nav.Link>
 
                         </Nav>
                         <Nav>
+
                             {
                                 user ?
                                     <Link to='/login'>

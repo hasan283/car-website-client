@@ -1,8 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './CarInventory.css'
+import { Helmet } from 'react-helmet-async';
+import Loading from '../LoginPage/Loading/Loading';
 
-const CarInventory = props => {
+const ManageInventoryDetail = props => {
     const { _id, img, name, sellerName, price, description, quantity } = props.inventory;
     const navigate = useNavigate();
     const handleStockUpdate = id => {
@@ -10,6 +11,9 @@ const CarInventory = props => {
     }
     return (
         <div className='inventory-container'>
+            <Helmet>
+                <title>Inventory Car Management</title>
+            </Helmet>
             <div className="inventory">
                 <img src={img} alt="" />
                 <div className="inventory-info mt-3">
@@ -28,4 +32,4 @@ const CarInventory = props => {
     );
 };
 
-export default CarInventory;
+export default ManageInventoryDetail;
