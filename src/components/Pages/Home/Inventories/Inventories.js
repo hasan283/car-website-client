@@ -11,7 +11,7 @@ const Inventorys = () => {
 
     const [inventories, setInventories] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/stock?page=${page}&size=${size}`)
+        fetch(`https://safe-escarpment-42110.herokuapp.com/stock?page=${page}&size=${size}`)
             .then(res => res.json())
             .then(data => setInventories(data))
     }, [page, size])
@@ -19,7 +19,7 @@ const Inventorys = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/stockCount')
+        fetch('https://safe-escarpment-42110.herokuapp.com/stockCount')
             .then(res => res.json())
             .then(data => {
                 const count = data.count;

@@ -8,7 +8,7 @@ const AddInventory = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/stock`;
+        const url = `https://safe-escarpment-42110.herokuapp.com/stock`;
         fetch(url, {
             method: 'POST',
             headers: {

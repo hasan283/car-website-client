@@ -4,7 +4,7 @@ const useStock = stockUpdateId => {
     const [stock, setStock] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/stock/${stockUpdateId}`;
+        const url = `https://safe-escarpment-42110.herokuapp.com/stock/${stockUpdateId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setStock(data))
