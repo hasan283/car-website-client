@@ -1,23 +1,36 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 
 const AddInventory = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data)
+        const url = `http://localhost:5000/stock`;
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result)
+                toast('Your Item Added Successfully!!')
+            })
+    };
     return (
         <div>
-            <h1>Add Your Inventory!</h1>
+            <h1 className='text-center my-5'>Add Your Inventory!</h1>
             <div className='container my-5'>
                 <div className="row">
                     <div className="col-lg-4 col-md-4 col-sm-4"></div>
                     <div className="col-lg-4 col-md-4 col-sm-4">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="my-2">
-                                <input className='w-100 py-1 px-2' placeholder='Inventory Name' {...register("name", { required: true, maxLength: 20 })} />
-                            </div>
-                            <div className="my-2">
-                                <input className='w-100 py-1 px-2' placeholder='Inventory Photo Url' {...register("img", { required: true, maxLength: 20 })} />
+                                <input className='w-100 py-1 px-2' type="text" placeholder='Inventory Name' {...register("name", { required: true, maxLength: 20 })} />
                             </div>
 
                             <div className="my-2">
@@ -30,6 +43,10 @@ const AddInventory = () => {
 
                             <div className="my-2">
                                 <textarea className='w-100 py-1 px-2' placeholder='Description' {...register("description")} />
+                            </div>
+
+                            <div className="my-2">
+                                <input className='w-100 py-1 px-2' type="text" placeholder='Inventory Photo Url' {...register("img")} />
                             </div>
 
                             <div className="my-2">

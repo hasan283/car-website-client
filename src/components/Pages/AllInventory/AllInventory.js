@@ -2,7 +2,7 @@ import React from 'react';
 import useInventory from '../../../hook/useInventory';
 import AllInventoryDetail from '../AllInventoryDetail/AllInventoryDetail';
 
-const ManageInventory = () => {
+const AllInventory = () => {
     const [inventories] = useInventory();
     return (
         <div id='inventory' className='container'>
@@ -21,4 +21,4 @@ const ManageInventory = () => {
     );
 };
 
-export default ManageInventory;
+export default AllInventory;

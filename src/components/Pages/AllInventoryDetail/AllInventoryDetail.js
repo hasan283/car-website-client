@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Loading from '../LoginPage/Loading/Loading';
 
-const ManageInventoryDetail = props => {
+const AllInventoryDetail = props => {
     const { _id, img, name, sellerName, price, description, quantity } = props.inventory;
     const navigate = useNavigate();
     const handleStockUpdate = id => {
@@ -32,4 +32,4 @@ const ManageInventoryDetail = props => {
     );
 };
 
-export default ManageInventoryDetail;
+export default AllInventoryDetail;

@@ -1,0 +1,19 @@
+.manage-inventory .manage-item{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.manage-inventory .manage-item img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.manage-inventory .manage-item h4{
+    color: #f87448;
+    text-align: center;
+}
+.manage-inventory .manage-item button{
+    background: #f87448;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
