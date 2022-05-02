@@ -107,7 +107,7 @@ const Teams = () => {
                                 </div>
                                 <h5>Name: Alex</h5>
                                 <p><b>Service: Service Provider</b></p>
-                                <p>She Is a Very Intelligent Service Provider</p>
+                                <p>He Is a Very Intelligent Service Provider</p>
                                 <div>
                                     <span><FontAwesomeIcon className='call-icon' icon={faPhone}> </FontAwesomeIcon>  +8809251780</span>
 
@@ -132,7 +132,7 @@ const Teams = () => {
                                 </div>
                                 <h5>Name: Johan Smith</h5>
                                 <p><b>Service: Service Seller</b></p>
-                                <p>She Is a Very Intelligent Service Seller</p>
+                                <p>He Is a Very Intelligent Service Seller</p>
                                 <div>
                                     <span><FontAwesomeIcon className='call-icon' icon={faPhone}> </FontAwesomeIcon>  +8809251780</span>
 
