@@ -23,3 +23,6 @@
     border: none;
     border-radius: 5px;
 }
+.stock-container .delivery{
+    background: red;
+}

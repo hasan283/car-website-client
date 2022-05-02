@@ -15,7 +15,7 @@ import Delivery from './components/Pages/Delivery/Delivery';
 import Order from './components/Pages/Order/Order';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Blog from './components/Pages/Blog/Blog';
-import StackOverflow from './components/Pages/StackOverflow/StackOverflow';
+// import StackOverflow from './components/Pages/StackOverflow/StackOverflow';
 
 function App() {
   return (
@@ -54,7 +54,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
-        <Route path='/overflow' element={<StackOverflow></StackOverflow>}></Route>
+        {/* <Route path='/overflow' element={<StackOverflow></StackOverflow>}></Route> */}
       </Routes>
 
       <ToastContainer></ToastContainer>
