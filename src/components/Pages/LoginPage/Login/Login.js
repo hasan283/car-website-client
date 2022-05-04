@@ -88,7 +88,7 @@ const Login = () => {
                         </Form.Group>
 
                         <Button className='d-block mx-auto bg-info text-white rounded px-5 py-2' variant="primary" type="submit">
-                            Register
+                            Login
                         </Button>
                     </Form>
                     {errorElement}
