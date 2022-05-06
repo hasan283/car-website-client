@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CarInventory from '../CarInventory/CarInventory';
 import './Inventories.css'
 
-const Inventorys = () => {
+const Inventories = () => {
     const [pageCount, SetPageCount] = useState(0);
     const [page] = useState(0)
     const [size] = useState(6)
@@ -23,7 +23,7 @@ const Inventorys = () => {
             .then(res => res.json())
             .then(data => {
                 const count = data.count;
-                const pages = Math.ceil(count / 6);
+                const pages = Math.ceil(count / 2);
                 SetPageCount(pages);
             })
     }, [])
@@ -49,4 +49,4 @@ const Inventorys = () => {
     );
 };
 
-export default Inventorys;
+export default Inventories;
