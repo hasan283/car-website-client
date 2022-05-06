@@ -3,7 +3,7 @@ import AllInventoryDetail from '../AllInventoryDetail/AllInventoryDetail';
 import './AllInventory.css';
 
 const AllInventory = () => {
-    const [pageCount, SetPageCount] = useState(0);
+    const [pageCount, setPageCount] = useState(0);
     const [page, setPage] = useState(0)
     const [size] = useState(6)
 
@@ -22,7 +22,7 @@ const AllInventory = () => {
             .then(data => {
                 const count = data.count;
                 const pages = Math.ceil(count / 6);
-                SetPageCount(pages);
+                setPageCount(pages);
             })
     }, []);
     return (

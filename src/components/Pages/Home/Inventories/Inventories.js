@@ -4,8 +4,8 @@ import CarInventory from '../CarInventory/CarInventory';
 import './Inventories.css'
 
 const Inventories = () => {
-    const [pageCount, SetPageCount] = useState(0);
-    const [page] = useState(0)
+    const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(0)
     const [size] = useState(6)
 
 
@@ -24,7 +24,7 @@ const Inventories = () => {
             .then(data => {
                 const count = data.count;
                 const pages = Math.ceil(count / 2);
-                SetPageCount(pages);
+                setPageCount(pages);
             })
     }, [])
     return (
