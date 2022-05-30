@@ -1,18 +1,20 @@
-# Getting Started with Create Inventory-Car-management Website.
+# This is Buy Car Parts Sales Manufacturer Website
 
-* INVENTORY-CAR-MANAGEMENT :--- [Client Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdhasan-999).
-* INVENTORY-CAR-MANAGEMENT :--- [Server Side Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdhasan-999).
-* INVENTORY-CAR-MANAGEMENT :--- [Live Website Link](https://inventory-car-management.web.app/).
-* StockOverflow :--- [StockOverflow Link](https://amazing-syrniki-a4c3b4.netlify.app/).
+## Live Website [Click me](https://inventory-car-management.web.app/).
 
-* রিয়াাক্ট এপ ইনিস্টল করেছি।
-* ফায়ারবেস ইনিস্টল করেছি। 
-* রিয়াক্ট রাউটার ইনিস্টল করেছি।
-* হেডার সেংশন বানিয়েছি। 
-* গিটহাবে কমান্ট করেছি।
-* কম্পোনেন্ট বানিয়েছি।
-* হেডার বানিয়েছি।
-* ব্যানার বানিয়েছি।
-* ৬টি ইনভেন্টরি যোগ করেছি।
-* আলাদা দুটি সেংশন যোগ করেছি।
+## Client Side Github Link [Click me](https://github.com/hasan283/car-website-client).
 
+## Server Side Github Link [Click me](https://github.com/hasan283/car-website-server).
+
+
+
+
+In the project directory, you can run:
+
+### It’s a car sales website. 
+* This website is for sale of car.
+* To purchase any car from here, the user must login / register with email password or social media.
+* This is secured by Firebase Authentication. 
+
+
+##### Technology used: React.js, Node.js, Bootstrap, Express.js, MongoDB, Material UI, Firebase, heroku 
