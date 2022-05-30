@@ -13,7 +13,7 @@ In the project directory, you can run:
 
 ### It’s a car sales website. 
 * This website is for sale of car.
-* To purchase any car from here, the user must login / register with email password or social media.
+* Before entering the website, you must register with the email password. After registration, the mail must be verified. However, after logging in with social media, there is no need to verify.
 * This is secured by Firebase Authentication. 
 
 
