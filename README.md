@@ -1,4 +1,4 @@
-# This is Buy Car Parts Sales Manufacturer Website
+# This is Buy Car Sales Website
 
 ## Live Website [Click me](https://inventory-car-management.web.app/).
 
