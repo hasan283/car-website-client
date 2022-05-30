@@ -1,4 +1,4 @@
-# This is Buy Car Sales Website
+# This is a Car Sales Website
 
 ## Live Website [Click me](https://inventory-car-management.web.app/).
 
